@@ -13,7 +13,7 @@ app.get('/',(request,response)=>{// Send a response to the user
 app.post('/',(request,response)=>{// Request comes from the user 
     const data = request.body;
     console.log('data',data);
-    response.status(500).send(data);
+    response.status(204).send(data);
 });
 app.delete('/',()=>{
 
